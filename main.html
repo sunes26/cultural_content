@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>쓸모없는사이트</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <script src="./js/list.js"></script>
+  </head>
+  <body>
+    <h1>쓸모 없는 웹사이트 접속하기</h1>
+    <button id="btn">접속하기</button>
+
+    <script>
+      const list = {
+        0: "sakura",
+        1: "numberPlus",
+        2: "song",
+      };
+
+      const btn = document.querySelector("#btn");
+      btn.addEventListener("click", () => {
+        var random = Math.floor(Math.random() * 3);
+        window.open("/useless/" + list[random] + ".html");
+      });
+    </script>
+  </body>
+</html>

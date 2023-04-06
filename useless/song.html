@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        html,
+        body {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        #titleBox {
+          width: 20vw;
+          min-width: 250px;
+          height: 24vw;
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          background-position: center;
+
+        }
+        audio{
+          width: 50vw;
+          height: 100px;
+          margin-bottom: 10px;
+        }
+      </style>
+
+</head>
+<body >
+
+    <div id="titleBox">
+
+    </div>
+    <h1 id="songName" style="margin-top: 20px;"></h1>
+    <audio controls autoplay>
+      <source  id="music" src="" type="audio/mp3">
+    </audio>
+  <!--<iframe src="" id="music" allow="autoplay"></iframe>-->
+    <script>
+        const list = {
+            1: "lucky",
+            2: "lowkey",
+            3: "flower",
+            4: "flowers",
+            5: "sign_of_the_times",
+            6: "suzume"
+        };
+      random = Math.floor(Math.random() * 6);
+      const titleBox = document.getElementById("titleBox");
+      const songName = document.getElementById("songName");
+      const music = document.getElementById("music");
+      music.src = "../music/"+list[random+1]+".mp3";
+      titleBox.style.backgroundImage = "url('../img/song_img/"+list[random+1]+".jpg')";
+      songName.innerHTML = list[random+1];
+    </script>
+</body>
+</html>
