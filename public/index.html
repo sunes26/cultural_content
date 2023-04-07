@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>쓸모없는사이트</title>
+<script>
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "firebase/app";
+      import { getAnalytics } from "firebase/analytics";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyD52uKVAx1wBglRXReFsXA2iRtMjyPupfY",
+        authDomain: "culturalcontent-26037.firebaseapp.com",
+        projectId: "culturalcontent-26037",
+        storageBucket: "culturalcontent-26037.appspot.com",
+        messagingSenderId: "183528898744",
+        appId: "1:183528898744:web:27a5445ab5dc4e0b33b44d",
+        measurementId: "G-K13HL49G8J",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.19.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.19.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-performance-compat.js"></script>
+    <!--
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      button{
+        margin-top: 50px;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+
+        background-color: #20dc74;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      h1{
+        font-size:calc(16px + 2vmin);
+      }
+    </style>
+    <script src="./js/list.js"></script>
+
+
+  </head>
+  <body>
+
+
+<h1>쓸모 없는 웹사이트 접속하기</h1>
+      <button id="btn">접속하기</button>
+
+    <script>
+      const list = {
+        0: "sakura",
+        1: "numberPlus",
+        2: "song",
+      };
+
+      const btn = document.querySelector("#btn");
+      btn.addEventListener("click", () => {
+        var random = Math.floor(Math.random() * 3);
+        window.open("./useless/" + list[random] + ".html");
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,2 +1,4 @@
-벚꽃 흩날리는 라이브러리 설치
-npm i sakura-js
+firebase 설치
+npm install firebase
+
+firebase init
