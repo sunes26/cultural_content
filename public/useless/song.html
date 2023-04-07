@@ -50,7 +50,7 @@
 
     </div>
     <h1 id="songName" style="margin-top: 20px;"></h1>
-    <audio controls autoplay>
+    <audio controls autoplay loop >
       <source  id="music" src="" type="audio/mp3">
     </audio>
   <!--<iframe src="" id="music" allow="autoplay"></iframe>-->
@@ -61,9 +61,13 @@
             3: "flower",
             4: "flowers",
             5: "sign_of_the_times",
-            6: "suzume"
+            6: "suzume",
+            7: "standbyme",
+            8: "wellerman",
+            9: "I_Aint_Worried",
+            10: "I_love_you_baby",
         };
-      random = Math.floor(Math.random() * 6);
+      random = Math.floor(Math.random() * 10);
       const titleBox = document.getElementById("titleBox");
       const songName = document.getElementById("songName");
       const music = document.getElementById("music");
