@@ -2,7 +2,8 @@
 
 쓸모없는 웹만들기
 
-## install firebase
+## install
+### install firebase
 
 `npm install firebase`
 `firebase login`
@@ -11,11 +12,11 @@
 
 ### `npm install`
 
-#### 'jquery
+### 'jquery
 
 `  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>`
 
-##### song_list
+## song_list
 
 - Johnny Stimson - Flower
 - Miley Cyrus - Flowers
