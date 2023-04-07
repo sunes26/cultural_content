@@ -3,11 +3,11 @@
 
 ## install firebase
 
-`
-npm install firebase
-firebase login
-firebase init
-firebase deploy
-`
+
+`npm install firebase`
+`firebase login`
+`firebase init`
+`firebase deploy`
+
 ### `npm install`
 =======
