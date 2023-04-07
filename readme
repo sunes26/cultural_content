@@ -1,4 +1,6 @@
 firebase 설치
 npm install firebase
-
+firebase login
 firebase init
+firebase deploy
+=======
